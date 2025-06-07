@@ -84,7 +84,6 @@ static inline void h_QABS_8(int& csize, byte in [CS], byte out [CS], const doubl
   const ftype* const data_f = (ftype*)in;
   itype* const data_i = (itype*)out;
 
-  #pragma omp parallel for default(none) shared(size, data_f, data_i, errorbound, eb2, inv_eb2, threshold, maxbin, mantissabits)
   for (int i = 0; i < size; i ++) {
     const ftype orig_f = data_f[i];
     const ftype scaled = orig_f * inv_eb2;

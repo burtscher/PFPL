@@ -112,7 +112,6 @@ static inline void h_QREL_4(int& csize, byte in [CS], byte out [CS], const float
   itype* const data_out_i = (itype*)out;
   itype* const data_in_i = (itype*)in;
 
-  #pragma omp parallel for default(none) shared(signexpomask, size, data_out_i, data_in_i, errorbound, log2eb, inv_log2eb, threshold, maxbin, mantissabits)
   for (int i = 0; i < size; i ++) {
     const itype orig_i = data_in_i[i];
     const itype abs_orig_i = orig_i & 0x7fff'ffff;

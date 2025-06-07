@@ -81,7 +81,6 @@ static inline void h_iQNOA_4(int& csize, byte in [CS], byte out [CS], const floa
   const itype* const data_i = (itype*)in;
   ftype* const data_f = (ftype*)out;
 
-  #pragma omp parallel for default(none) shared(size, data_f, data_i, errorbound, eb2, mantissabits)
   for (int i = 0; i < size; i ++) {
     itype bin = data_i[i];
     ftype val;

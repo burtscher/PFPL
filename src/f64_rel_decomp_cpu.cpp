@@ -110,7 +110,6 @@ static inline void h_iQREL_8(int& csize, byte in [CS], byte out [CS], const doub
   itype* const data_in_i = (itype*)in;
   itype* const data_out_i = (itype*)out;
 
-  #pragma omp parallel for default(none) shared(size, data_in_i, data_out_i, log2eb, signexpomask)
   for (int i = 0; i < size; i ++) {
     itype val = (data_in_i[i] + 1) ^ signexpomask;
     if (((val & signexpomask) == signexpomask) && ((val & ~signexpomask) != 0)) {  // is encoded value
