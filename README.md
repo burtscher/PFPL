@@ -10,7 +10,7 @@ PFPL is a guaranteed-error bound lossy compressor/decompressor that produces bit
   - Execution: Parallel
   - Output: Compressed and lossily reconstructed files
   - Code license: BSD 3-Clause License
-  - Corresponding paper: TODO insert DOI
+  - Corresponding paper: [[doi]](https://doi.org/10.1109/IPDPS64566.2025.00083) [[paper]](https://userweb.cs.txstate.edu/~burtscher/papers/ipdps25a.pdf) [[slides]](https://userweb.cs.txstate.edu/~burtscher/slides/ipdps25a.pptx)
 
 ### Description
 
