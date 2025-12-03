@@ -50,3 +50,12 @@ After compiling, the codes can be run as outlined in the following examples:
 
 The threshold parameter will trigger any absolute value at or above the threshold to be losslessly preserved. This is to accommodate any protected values (such as sentinel values).
 To match the paper, the codes will be run 9 times and the runtimes reported in seconds.
+
+## Publication
+
+If you use PFPL in your work, please cite the following publication:
+
+Alex Fallin, Noushin Azami, Sheng Di, Franck Cappello, and Martin Burtscher. Fast and Effective Lossy Compression on GPUs and CPUs with Guaranteed Error Bounds. Proceedings of the 39th IEEE International Parallel and Distributed Processing Symposium. June 2025. 
+[[doi]](https://doi.org/10.1109/IPDPS64566.2025.00083) [[paper]](https://userweb.cs.txstate.edu/~burtscher/papers/ipdps25a.pdf) [[slides]](https://userweb.cs.txstate.edu/~burtscher/slides/ipdps25a.pptx)
+
+*This work has been supported in part by the Department of Energy, Office of Science, Advanced Scientific Computing Research (ASCR), under Award Numbers DE-SC0022223 and DE-AC02-06CH11357 as well as by an equipment donation from NVIDIA Corporation. This material was supported by the National Science Foundation under Grant Numbers CSSI/OAC #2311875 and CSSI/OAC #2104023.*
