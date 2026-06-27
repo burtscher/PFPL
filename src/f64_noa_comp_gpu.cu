@@ -379,7 +379,7 @@ int main(int argc, char* argv [])
     dtimer.start();
 
     d_reset<<<1, 1>>>();
-    cudaMemset(d_fullcarry, 0, chunks * sizeof(byte));
+    cudaMemset(d_fullcarry, 0, chunks * sizeof(int));
 
     thrust::device_ptr<double> dev_ptr = thrust::device_pointer_cast((double*)d_input);
     thrust::pair<thrust::device_ptr<double>, thrust::device_ptr<double>> min_max = thrust::minmax_element(thrust::device, dev_ptr, dev_ptr + (insize / sizeof(double)));

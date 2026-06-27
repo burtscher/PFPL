@@ -417,7 +417,7 @@ int main(int argc, char* argv [])
     dtimer.start();
 
     d_reset<<<1, 1>>>();
-    cudaMemset(d_fullcarry, 0, chunks * sizeof(byte));
+    cudaMemset(d_fullcarry, 0, chunks * sizeof(int));
     d_encode<<<blocks, TPB>>>(d_input, insize, d_encoded, d_encsize, d_fullcarry, errorbound, threshold);
 
     cudaDeviceSynchronize();
